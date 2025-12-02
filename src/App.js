@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import SKUManagement from './components/SKUManagement'
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <SKUManagement />
+
+      {/* <div style={{ padding: "20px", color: "white" }}>
+        <h1>Navbar Loaded Successfully ✔</h1>
+        <p>Your custom navbar is now visible above.</p>
+      </div> */}
     </div>
   );
 }

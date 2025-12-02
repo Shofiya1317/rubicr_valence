@@ -1,0 +1,220 @@
+/* Page container */
+.sku-page-container {
+  width: 1400px;
+  min-height: 917px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 20px;
+font-family: Inter, sans-serif;
+}
+
+/* Heading container */
+.sku-heading-container {
+  margin-bottom: 30px;     /* space below heading */
+}
+
+.sku-heading-container h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+.sku-heading-container p {
+  color: #64656D;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+/* Filter boxes container */
+/* Parent row: left + right */
+.sku-top-row {
+  display: flex;
+  justify-content: space-between;  /* <-- LEFT + RIGHT */
+  align-items: center;
+  width: 100%;
+}
+
+/* Left side filters */
+.sku-filter-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Filter container (one box) */
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* small gap between label & dropdown */
+}
+
+
+/* Label */
+.filter-label {
+
+  height: 17px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #1E1E1E;
+}
+
+/* Input wrapper */
+.search-box {
+  position: relative;
+  width: 218px;
+  height: 40px;
+}
+
+/* Actual input */
+.sku-input {
+  width: 218px;
+  height: 100%;
+  border-radius: 8px;
+  padding: 11px 35px 9px 17px;
+  border: 1px solid #E4E7EC;
+  outline: none;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Search icon */
+.search-icon {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #98A2B3;
+  pointer-events: none;
+}
+
+/* Wrapper */
+.sku-select__control {
+  width: 170px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  border-radius: 8px !important;
+  border: 1px solid #E4E7EC !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+/* Hover border */
+.sku-select__control:hover {
+  border-color: #D0D5DD !important;
+}
+
+/* Remove inner padding so we apply our own */
+/* .sku-select__value-container {
+  padding: 11px 9px 9px 17px !important;
+} */
+
+/* Placeholder */
+.sku-select__placeholder {
+  font-size: 14px !important;
+  color: #667085 !important;
+}
+
+/* Selected text */
+.sku-select__single-value {
+  font-size: 14px !important;
+  color: #1E1E1E !important;
+}
+
+/* Dropdown arrow container */
+.sku-select__indicators {
+  height: 40px !important;
+}
+
+/* Dropdown options */
+.sku-select__option {
+  cursor: pointer !important;
+  font-size: 14px !important;
+}
+
+.sku-select__option--is-focused {
+  background: #90c9e3 !important;
+  color: #ffffff !important;
+}
+
+.sku-select__option--is-selected {
+  background: #90c9e3 !important;
+  color: #ffffff !important;
+}
+
+/* Dropdown menu */
+.sku-select__menu {
+  z-index: 9999 !important;
+}
+
+.sku-select__menu-list {
+  max-height: 200px !important;
+  overflow-y: auto !important;
+}
+
+/* BUTTON CONTAINER */
+.sku-buttons-container {
+  display: flex;
+  width: 306px;
+  height: 40px;
+  gap: 15px;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 50px;
+}
+/* COMMON BUTTON STYLE */
+.sku-btn {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #64656D;
+  padding: 10px 15px 10px 10px; /* top right bottom left */
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* CREATE BUTTON */
+.create-btn {
+  width: 164px;
+  background: #383838;
+  color: #ffffff;
+  border: 1px solid #64656D;
+}
+/* UPLOAD FILE BUTTON */
+.upload-btn {
+  width: 127px;
+  background: #ffffff;
+  color: #383838;
+  border: 1px solid #64656D;
+}
+
+.results-text {
+  width: 101px;
+  height: 15px;
+
+  opacity: 1;
+  font-family: Inter, sans-serif;
+  font-weight: 500;          /* Medium */
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  color: #64656D;
+
+  display: flex;             /* to respect height */
+  align-items: center;       /* vertically center the text */
+  padding: 0 6px;            /* optional: adds spacing */
+  border-radius: 4px;        /* optional: looks cleaner */
+}
